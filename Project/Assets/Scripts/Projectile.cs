@@ -6,32 +6,35 @@ using UnityEngine.Tilemaps;
 public class Projectile : MonoBehaviour
 {
 
+    public int damage = 3;
     public float projectileSpeed = 4.5f;
-
-    public Tilemap Collision;
+    public EnemyHealth ehealth;
+    
 
     // Start is called before the first frame update
     private void Update()
     {   
         transform.position += transform.right * projectileSpeed * Time.deltaTime;
-        Vector3Int collisionTileMap = Collision.WorldToCell(transform.position);
-        if(Collision.GetTile(collisionTileMap) != null){
-            Destroy(gameObject);
-        }
-        
-        
     }
 
 
     //destroy fireball on hit
     private void OnCollisionEnter2D(Collision2D collision){
         
-        if(collision.gameObject.tag == "Enemy"){
+        if(collision.gameObject.tag == "Player"){
+            return;
+        }
+        else if(collision.gameObject.tag == "Enemy"){
+            ehealth.TakeDamage(damage);
             Destroy(gameObject);
         }
-        else if(collision.gameObject.tag == "Boundary"){
+        else{
             Destroy(gameObject);
         }
+
+        
+        
+        
         
     }
     

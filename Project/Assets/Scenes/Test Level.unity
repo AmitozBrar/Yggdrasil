@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 318490449}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Boundary
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -678,9 +678,9 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -1202,7 +1202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1341,7 +1341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1400,7 +1400,7 @@ GameObject:
   - component: {fileID: 1188337099}
   m_Layer: 0
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,8 +1417,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 965392886}
   - {fileID: 1916624220}
+  - {fileID: 965392886}
   - {fileID: 264336861}
   - {fileID: 1418566563}
   m_Father: {fileID: 0}
@@ -1499,7 +1499,7 @@ TilemapRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -2585,9 +2585,10 @@ GameObject:
   - component: {fileID: 1389971951}
   - component: {fileID: 1389971952}
   - component: {fileID: 1389971953}
+  - component: {fileID: 1389971954}
   m_Layer: 11
   m_Name: Test enemy
-  m_TagString: Finish
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2701,6 +2702,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe43c8e289cbdbc439c8fb68286a53cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1389971954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389971947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ccda9d4b2190a4c8b8f46824000c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  health: 0
 --- !u!4 &1418566563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
@@ -2717,8 +2732,9 @@ GameObject:
   - component: {fileID: 1615116923}
   - component: {fileID: 1615116922}
   - component: {fileID: 1615116925}
-  - component: {fileID: 1615116924}
   - component: {fileID: 1615116926}
+  - component: {fileID: 1615116929}
+  - component: {fileID: 1615116924}
   - component: {fileID: 1615116927}
   - component: {fileID: 1615116928}
   m_Layer: 10
@@ -2768,8 +2784,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 2a9324b7868e1ce4b8ea5da642d200d5, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 174784d5d2dce1d43a0daa72663cf300, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2788,7 +2804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615116918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.723, y: -3.3, z: 0}
+  m_LocalPosition: {x: -2.132, y: -3.575, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2808,7 +2824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7331c88c64608034bb9b244aaad7e216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2.25
   rb: {fileID: 1615116925}
 --- !u!50 &1615116925
 Rigidbody2D:
@@ -2841,11 +2857,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11}
-  m_Size: {x: 0.42, y: 0.46}
+  m_Offset: {x: 0.028426528, y: 0.5520512}
+  m_Size: {x: 0.28, y: 0.7784083}
   m_Direction: 0
 --- !u!114 &1615116927
 MonoBehaviour:
@@ -2876,7 +2892,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePos: {fileID: 412279517}
-  projectile: {fileID: -2220941374387543070, guid: c949226e682faae4197b3d8820ca8d6f, type: 3}
+  projectile: {fileID: 693227183711186823, guid: 8014bf83b72427145bcb30680d62ff68, type: 3}
+--- !u!61 &1615116929
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615116918}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.029703021, y: 0.10990095}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.51, y: 0.98}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.109999895, y: 0.09485102}
+  m_EdgeRadius: 0
 --- !u!4 &1916624220 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1462593551988340056, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
@@ -2936,6 +2978,14 @@ PrefabInstance:
     - target: {fileID: 1462593551988340058, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
       propertyPath: m_Name
       value: Hill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462593551988340058, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462593551988340058, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecfac60906235624fb9358d3b00b50b6, type: 3}
