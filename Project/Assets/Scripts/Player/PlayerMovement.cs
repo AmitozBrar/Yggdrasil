@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+        if(movement.sqrMagnitude > 0.01){
+            animator.SetFloat("FaceVert", movement.y);
+            animator.SetFloat("FaceHort", movement.x);
+        }
     }
     
     private void sortingLayerUpate(){
