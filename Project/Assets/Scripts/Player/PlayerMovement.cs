@@ -38,4 +38,13 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         sortingLayerUpate();
     }
+
+    public void door(int flag){
+        if(flag == 1){
+            Physics2D.IgnoreLayerCollision(10,12,true);
+        }
+        else{
+            Physics2D.IgnoreLayerCollision(10,12,false);
+        }
+    }
 }
