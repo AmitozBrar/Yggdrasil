@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     private SpriteRenderer spriteRend;
 
+    public Animator animator;
+
     Vector2 movement;
     // Start is called before the first frame update
     void Start(){
@@ -20,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     void Update(){
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
     }
     
     private void sortingLayerUpate(){
