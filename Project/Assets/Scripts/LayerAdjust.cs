@@ -11,4 +11,10 @@ public class LayerAdjust : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
         spriteRend.sortingOrder = (int)(transform.position.y * -100);
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
