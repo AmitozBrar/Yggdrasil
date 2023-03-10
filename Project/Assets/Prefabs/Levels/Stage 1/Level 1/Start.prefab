@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3653524433257477694}
   m_Layer: 0
-  m_Name: TL
+  m_Name: BR
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2703,6 +2703,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
+  dir: 0
+  lim: {fileID: 2582661174987472360, guid: 5bd7d51feef3e114b80d6438092c2c91, type: 3}
+  rooms:
+  - {fileID: 3399896957236551398, guid: c40d03343dc270249bc3f530a2b24496, type: 3}
+  - {fileID: 3399896957236551398, guid: b3b20db8430d3ad4e81441bb7798d3a7, type: 3}
+  - {fileID: 3399896957236551398, guid: e8daedef434697247bfa37706aa167a4, type: 3}
+  - {fileID: 3399896957236551398, guid: 3c39fa6f11e3c3141b2a8379d6e070b7, type: 3}
+  sides: 00000000010000000200000003000000
 --- !u!1 &3210857892481865227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,16 +5118,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 16, y: -7, z: -2}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10251,8 +10249,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 749
     m_Data: {fileID: 11400000, guid: fb75f9e5047ea6749b88c6e6efd79a2f, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 90f053d6a9440cf4ca3864aa52cb5b41, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
@@ -10262,10 +10260,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 8ba48f833e4d4b148b0743fd3b4ad380, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 0fb626022df56114daf91ea505c5dc84, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 750
+  - m_RefCount: 749
     m_Data:
       e00: 1
       e01: 0
@@ -10284,7 +10282,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 750
+  - m_RefCount: 749
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -10352,7 +10350,7 @@ TilemapRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.13999999, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -10431,7 +10429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6946435074657452666}
   m_Layer: 0
-  m_Name: BR
+  m_Name: TL
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
