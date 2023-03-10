@@ -50,4 +50,5 @@ MonoBehaviour:
   - {fileID: 3399896957236551398, guid: b3b20db8430d3ad4e81441bb7798d3a7, type: 3}
   - {fileID: 3399896957236551398, guid: e8daedef434697247bfa37706aa167a4, type: 3}
   - {fileID: 3399896957236551398, guid: 3c39fa6f11e3c3141b2a8379d6e070b7, type: 3}
-  limit: 8
+  mainlimit: 12
+  limit: 100

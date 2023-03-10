@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class WorldGenStart : MonoBehaviour
 {
+    public WorldGenStart limit_;
     public GameObject startPiece;
     public GameObject[] bridgePeice;
     public int limit;
     // Start is called before the first frame update
     void Start()
     {
-        limit = 9;
+        limit_.limit = Random.Range(11,33);
         int rand = Random.Range(0,3);
         GameObject  curPiece = Instantiate(startPiece,transform.position, Quaternion.identity) as GameObject;
         int id = curPiece.GetComponent<Idenity>().type;
