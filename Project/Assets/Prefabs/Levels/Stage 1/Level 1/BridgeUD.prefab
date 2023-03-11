@@ -1255,7 +1255,12 @@ MonoBehaviour:
   dir: 0
   lim: {fileID: 2582661174987472360, guid: 5bd7d51feef3e114b80d6438092c2c91, type: 3}
   rooms:
-  - {fileID: 3210857892445783489, guid: a78bfc0868b154d4c86787161e9c15ea, type: 3}
+  - {fileID: 3210857892445783489, guid: 043719de4e171d84a969bbf356923c83, type: 3}
+  - {fileID: 3210857892445783489, guid: 5602d91d6cecba148a3a46512dcd9c2e, type: 3}
+  - {fileID: 3210857892445783489, guid: 55f0bd3622b9f2149a3e499bb8359287, type: 3}
+  - {fileID: 3210857892445783489, guid: 30b15a2906fe3024ebbd910a69e7c785, type: 3}
+  drooms:
+  - {fileID: 8578713992501129767, guid: fe91665a061222649aef895ba82436f6, type: 3}
   sides: 
 --- !u!1 &3399896957265743872
 GameObject:
@@ -1904,7 +1909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7825687217706780920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.775, y: -0.775, z: 0}
+  m_LocalPosition: {x: -0.6975, y: -0.89125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
