@@ -11,12 +11,12 @@ public class WorldGenStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        limit_.limit = Random.Range(11,33);
+        limit_.limit = Random.Range(15,50);
         int rand = Random.Range(0,3);
         GameObject  curPiece = Instantiate(startPiece,transform.position, Quaternion.identity) as GameObject;
         int id = curPiece.GetComponent<Idenity>().type;
 
-        for(int i = 0; i <= 0; i++){
+        for(int i = 0; i < 4; i++){
             Instantiate(bridgePeice[i],curPiece.transform.GetChild(i).position - bridgePeice[i].transform.GetChild(0).position,Quaternion.identity);
         }
 
