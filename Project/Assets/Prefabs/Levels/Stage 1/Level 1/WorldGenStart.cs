@@ -16,7 +16,7 @@ public class WorldGenStart : MonoBehaviour
         GameObject  curPiece = Instantiate(startPiece,transform.position, Quaternion.identity) as GameObject;
         int id = curPiece.GetComponent<Idenity>().type;
 
-        for(int i = 0; i < 4; i++){
+        for(int i = 0; i <= rand; i++){
             Instantiate(bridgePeice[i],curPiece.transform.GetChild(i).position - bridgePeice[i].transform.GetChild(0).position,Quaternion.identity);
         }
 

@@ -18,6 +18,9 @@ public class Idenity : MonoBehaviour
 
         if(type == 0){
             if(Physics2D.OverlapCircle(transform.GetChild(1).position,.4f) != null){
+                if(Physics2D.OverlapCircle(transform.GetChild(1).position,1f,8) != null){
+                    Destroy(gameObject);
+                }
                 return;
             }
             
