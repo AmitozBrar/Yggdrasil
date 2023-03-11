@@ -6,10 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public float diagonalAngle = 30f;
 
-    public float moveSpeed = 5f;
-
+    
+    public Stats spe; 
     public Rigidbody2D rb;
-
+    private float moveSpeed;
     private SpriteRenderer spriteRend;
 
     public Animator animator;
@@ -29,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
        float hori = Input.GetAxisRaw("Horizontal");
        float vert = Input.GetAxisRaw("Vertical");
 
-        
+        moveSpeed = spe.spe;
+
         if((hori == 1  && vert == 1 )||(hori == 1  && vert == -1) ||(hori == -1  && vert == 1)||(hori == -1  && vert == -1)){
             Debug.Log("UR");
 

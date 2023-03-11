@@ -13,13 +13,11 @@ public class EnemyHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    public void TakeDamage(int damage){
-        health -= damage;
+    void Update(){
         if(health <= 0){
             Destroy(gameObject);
         }
     }
-
     // Update is called once per frame
     
 }

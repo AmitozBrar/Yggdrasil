@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ad826565b2549499b3ff104f6639df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
   projectileSpeed: 4.5
-  ehealth: {fileID: 0}
+  stat: {fileID: 806597067, guid: cbf64a2bc3744b1469cd3499e21292b4, type: 3}
+  ehealth: {fileID: 6366498282069006862, guid: 84a6add058f0b12458b308cbf4134b15, type: 3}
 --- !u!50 &5869194554358561529
 Rigidbody2D:
   serializedVersion: 4
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

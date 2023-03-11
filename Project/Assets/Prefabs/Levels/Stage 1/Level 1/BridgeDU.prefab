@@ -1254,6 +1254,7 @@ MonoBehaviour:
   - {fileID: 3210857892445783489, guid: 55f0bd3622b9f2149a3e499bb8359287, type: 3}
   drooms:
   - {fileID: 3149424296355849316, guid: a837a326eaaedf1459a385ce40125e18, type: 3}
+  - {fileID: 3149424296355849316, guid: 859ff080e36d06a45af77618b6f581a2, type: 3}
   sides: 
 --- !u!1 &3399896957265743872
 GameObject:

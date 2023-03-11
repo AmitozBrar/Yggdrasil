@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+    public Stats stats;
     private SpriteRenderer spriteRend;
 
-    public int maxHealth  = 3;
+    public int maxHealth;
     public int health;
     public float iframeduration;
     public int numOfFlashes;
     
     // Start is called before the first frame update
     void Start(){
+        maxHealth = stats.hp;
         health = maxHealth;
         spriteRend = GetComponent<SpriteRenderer>();
     }

@@ -2956,14 +2956,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
-  dir: 0
+  dir: 1
   lim: {fileID: 2582661174987472360, guid: 5bd7d51feef3e114b80d6438092c2c91, type: 3}
   rooms:
   - {fileID: 3399896957236551398, guid: c40d03343dc270249bc3f530a2b24496, type: 3}
   - {fileID: 3399896957236551398, guid: b3b20db8430d3ad4e81441bb7798d3a7, type: 3}
   - {fileID: 3399896957236551398, guid: e8daedef434697247bfa37706aa167a4, type: 3}
   - {fileID: 3399896957236551398, guid: 3c39fa6f11e3c3141b2a8379d6e070b7, type: 3}
-  drooms: []
+  drooms:
+  - {fileID: 0}
   sides: 00000000010000000200000003000000
 --- !u!1 &3210857892481865227
 GameObject:

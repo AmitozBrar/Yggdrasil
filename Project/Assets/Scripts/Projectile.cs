@@ -6,8 +6,8 @@ using UnityEngine.Tilemaps;
 public class Projectile : MonoBehaviour
 {
 
-    public int damage = 3;
     public float projectileSpeed = 4.5f;
+    public Stats stat;
     public EnemyHealth ehealth;
     
 
@@ -25,11 +25,11 @@ public class Projectile : MonoBehaviour
             return;
         }
         else if(collision.gameObject.tag == "Enemy"){
-            ehealth.TakeDamage(damage);
+            ehealth.health -= 1;
             Destroy(gameObject);
         }
         else{
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         

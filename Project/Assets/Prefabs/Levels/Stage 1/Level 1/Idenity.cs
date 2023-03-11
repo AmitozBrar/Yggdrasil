@@ -10,6 +10,7 @@ public class Idenity : MonoBehaviour
     public WorldGenStart lim;
     public GameObject[] rooms;
     public GameObject[] drooms;
+    public GameObject[] Enemy;
     public int[] sides;
     private bool hasSide;
     private int rand;
@@ -29,6 +30,9 @@ public class Idenity : MonoBehaviour
         else if(type != 0){
             roomToBridge(dir);
         }
+        rand = Random.Range(0,Enemy.Length);
+
+        Instantiate(Enemy[rand],transform.GetChild(4).position,Quaternion.identity);
     }
 
     public void bridgeToRoom(){
