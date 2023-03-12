@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddb950e966a45e94b9c4f4669a9b18ec, type: 3}
-  m_Name: Critical
+  m_Name: MagicAOE
   m_EditorClassIdentifier: 
-  name: Critical
-  description: Critical chance increased by 5%
-  artwork: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
+  name: Exploding Magic
+  description: Increase magic AOE range by 1
+  tier: Rare
+  artwork: {fileID: 0}

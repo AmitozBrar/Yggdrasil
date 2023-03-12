@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddb950e966a45e94b9c4f4669a9b18ec, type: 3}
-  m_Name: Evasion
+  m_Name: Shield Ghost
   m_EditorClassIdentifier: 
-  name: Evasive
-  description: Increase chance to dodge attacks by 5%
-  artwork: {fileID: 21300000, guid: 874d8401331ede14087e8d8d486ddda6, type: 3}
+  name: Shield Ghost
+  description: Summon a ghost shield to protect you
+  tier: Legendary
+  artwork: {fileID: 21300000, guid: 8f59342437c05834cb6e5d19a948cefe, type: 3}
